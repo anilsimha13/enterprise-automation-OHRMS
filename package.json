@@ -3,7 +3,14 @@
   "version": "1.0.0",
   "description": "- [Installation](#installation)",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:headed:trace": "npx playwright test --headed --trace on",
+    "test:debug": "npx playwright test --debug",
+    "test:report": "npx playwright show-report",
+    "codegen:url": "npx playwright codegen https://opensource-demo.orangehrmlive.com/web/index.php/auth/login --target=ts --output=e2e/tests/codegen.spec.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

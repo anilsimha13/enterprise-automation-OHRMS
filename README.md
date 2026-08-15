@@ -30,6 +30,7 @@
 - `npx playwright test --headed` to run the tests in headed mode.
 - `npx playwright show-report` to view the test report.
 - `npx playwright codegen <url>` to generate code for a specific URL.
+- `npx playwright test --headed --trace on` to run the tests in headed mode with tracing enabled.
 
 ### Playwright Configuration (playwright.config.ts)
 
@@ -58,7 +59,9 @@ export default defineConfig({
 <!--
 #### Sequence of Videos to be followed for the complete Automation Framework
 
-- 1.  playwright installation and 1st test execution.mp4
-- 2.  Playwright test setup.mp4
-- 8.  playwright core library vs playwright test runner.mp4
+- 1. playwright installation and 1st test execution.mp4
+- 2. Playwright test setup.mp4
+- 8. playwright core library vs playwright test runner.mp4
+- 3. Convert loginTest To Page Object Model.mp4
+- 5. New Test AddEmployeeTest.mp4
 -->
