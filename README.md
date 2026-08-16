@@ -64,4 +64,6 @@ export default defineConfig({
 - 8. playwright core library vs playwright test runner.mp4
 - 3. Convert loginTest To Page Object Model.mp4
 - 5. New Test AddEmployeeTest.mp4
+- 4. Env file and class setup.mp4
+- 7. Convert addEmployeeTest to Pages and Components.mp4
 -->

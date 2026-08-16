@@ -1,4 +1,5 @@
 import { Page } from "@playwright/test";
+import { Env } from "./frameworkConfig/env";
 export class LoginPage {
   page: Page;
 
@@ -7,17 +8,19 @@ export class LoginPage {
   }
 
   async goto() {
-    await this.page.goto(
-      "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
-    );
+    await this.page.goto(Env.BASE_URL);
   }
 
-  async fillUsername(username: string) {
-    await this.page.getByRole("textbox", { name: "Username" }).fill(username);
+  async fillUsername() {
+    await this.page
+      .getByRole("textbox", { name: "Username" })
+      .fill(Env.ACCOUNT_USERNAME);
   }
 
-  async fillPassword(password: string) {
-    await this.page.getByRole("textbox", { name: "Password" }).fill(password);
+  async fillPassword() {
+    await this.page
+      .getByRole("textbox", { name: "Password" })
+      .fill(Env.ACCOUNT_PASSWORD);
   }
 
   async clickLogin() {

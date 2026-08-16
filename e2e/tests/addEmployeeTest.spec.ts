@@ -1,13 +1,13 @@
 import { test, expect } from "@playwright/test";
 import { LoginPage } from "./pages/loginPage";
 
-test.only("Should able to add employee to the system without any errors", async ({
+test("Should able to add employee to the system without any errors", async ({
   page,
 }) => {
   const loginPage = new LoginPage(page);
   await loginPage.goto();
-  await loginPage.fillUsername("Admin");
-  await loginPage.fillPassword("admin123");
+  await loginPage.fillUsername();
+  await loginPage.fillPassword();
   await loginPage.clickLogin();
   await page.getByRole("link", { name: "PIM" }).click();
   await page.getByRole("link", { name: "Add Employee" }).click();
