@@ -66,4 +66,6 @@ export default defineConfig({
 - 5. New Test AddEmployeeTest.mp4
 - 4. Env file and class setup.mp4
 - 7. Convert addEmployeeTest to Pages and Components.mp4
+- 6. Adding assertion for ToastMsg.mp4
+- 9. Faker data generation and using in spec file.mp4
 -->

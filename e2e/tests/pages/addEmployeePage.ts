@@ -1,5 +1,5 @@
 import { Page } from "@playwright/test";
-import { faker } from "@faker-js/faker";
+import { EmployeeDetails } from "../../testData/dataInterface";
 
 export class AddEmployeePage {
   readonly page: Page;
@@ -7,16 +7,16 @@ export class AddEmployeePage {
     this.page = page;
   }
 
-  async fillEmployeeDetails() {
+  async fillEmployeeDetails(employeeDetails: EmployeeDetails) {
     await this.page
       .getByRole("textbox", { name: "First Name" })
-      .fill(faker.person.firstName());
+      .fill(employeeDetails.firstName);
     await this.page
       .getByRole("textbox", { name: "Middle Name" })
-      .fill(faker.person.middleName());
+      .fill(employeeDetails.middleName);
     await this.page
       .getByRole("textbox", { name: "Last Name" })
-      .fill(faker.person.lastName());
+      .fill(employeeDetails.lastName);
     await this.page.getByRole("button", { name: "Save" }).click();
   }
 
