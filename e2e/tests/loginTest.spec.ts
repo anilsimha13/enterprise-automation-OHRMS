@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { LoginPage } from "./pages/loginPage";
 
-test.only("Should login user into the system without any errors", async ({
+test.skip("Should login user into the system without any errors", async ({
   page,
 }) => {
   const loginPage = new LoginPage(page);

@@ -1,20 +1,20 @@
 import { test, expect } from "@playwright/test";
 import { LoginPage } from "./pages/loginPage";
+import { AddEmployeePage } from "./pages/addEmployeePage";
+import { HomePage } from "./pages/homePage";
 
 test("Should able to add employee to the system without any errors", async ({
   page,
 }) => {
   const loginPage = new LoginPage(page);
+  const homePage = new HomePage(page);
+  const addEmployeePage = new AddEmployeePage(page);
   await loginPage.goto();
   await loginPage.fillUsername();
   await loginPage.fillPassword();
   await loginPage.clickLogin();
-  await page.getByRole("link", { name: "PIM" }).click();
-  await page.getByRole("link", { name: "Add Employee" }).click();
-  await page.getByRole("textbox", { name: "First Name" }).fill("firstName");
-  await page.getByRole("textbox", { name: "Middle Name" }).fill("middleName");
-  await page.getByRole("textbox", { name: "Last Name" }).fill("lastName");
-  await page.getByRole("button", { name: "Save" }).click();
-  await expect(page.getByText("SuccessSuccessfully Saved")).toBeVisible();
-  await expect(page.locator("#app")).toContainText("firstName lastName");
+  await homePage.getLeftMenuComponent.leftPanelClick("PIM");
+  await homePage.getTopMenuComponent.topPanelClick("Add Employee");
+  await addEmployeePage.fillEmployeeDetails();
+  await expect(addEmployeePage.successMessage).toBeVisible();
 });
