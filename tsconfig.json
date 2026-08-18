@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "types": ["node"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "@pages/*": ["e2e/tests/pages/*"],
+      "@e2e/*": ["e2e/*"]
+    }
+  },
+  "include": ["playwright.config.ts", "e2e/**/*.ts"]
+}

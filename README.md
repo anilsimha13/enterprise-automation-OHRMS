@@ -56,6 +56,12 @@ export default defineConfig({
 });
 ```
 
+### Custom Fixtures
+
+- Custom fixtures are user-defined fixtures that can be created to extend the functionality of Playwright's built-in fixtures. They allow you to set up and tear down resources that are needed for your tests, such as database connections, API clients, or any other custom setup.
+- Custom fixtures can be defined in a separate file and imported into your test files. They can be used to provide additional context or data to your tests, making them more modular and reusable.
+- Custom fixtures can also be used to create reusable test utilities, such as login functions or data generators, that can be shared across multiple test files.
+
 <!--
 #### Sequence of Videos to be followed for the complete Automation Framework
 
@@ -68,4 +74,6 @@ export default defineConfig({
 - 7. Convert addEmployeeTest to Pages and Components.mp4
 - 6. Adding assertion for ToastMsg.mp4
 - 9. Faker data generation and using in spec file.mp4
+- 16. tsConfig file for readable imports.mp4
+- 10. custom Fixtures and setup.mp4
 -->

@@ -1,10 +1,10 @@
-import { test, expect } from "@playwright/test";
-import { LoginPage } from "./pages/loginPage";
+import { expect } from "@playwright/test";
+import { it } from "@e2e/fixtures/customFixture";
 
-test.skip("Should login user into the system without any errors", async ({
+it("Should login user into the system without any errors", async ({
   page,
+  loginPage,
 }) => {
-  const loginPage = new LoginPage(page);
   await loginPage.goto();
   await loginPage.fillUsername();
   await loginPage.fillPassword();
