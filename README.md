@@ -104,4 +104,5 @@ export default defineConfig({
 - 14. Playwright Auto Wait VS Selenium WebDriver.mp4
 - 15. wait for playwright complete E2E setup.mp4
 - 17. API Testing using PlayWright.mp4
+- 18. playwright.config.ts file E2E explanations.mp4
 -->
