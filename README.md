@@ -102,4 +102,6 @@ export default defineConfig({
 - 12. Playwright Locators Part-2.mp4
 - 13. PlayWright UI Mode and Trace Viewer.mp4
 - 14. Playwright Auto Wait VS Selenium WebDriver.mp4
+- 15. wait for playwright complete E2E setup.mp4
+- 17. API Testing using PlayWright.mp4
 -->
