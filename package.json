@@ -1,27 +1,27 @@
 {
   "name": "enterprise-automation-orange-hrms",
   "version": "1.0.0",
-  "description": "- [Installation](#installation)",
+  "description": "- [Playwright(Core Library) vs Playwright Test Runner](#playwrightcore-library-vs-playwright-test-runner)\r - [Installation and Setup guide](#installation-and-setup-guide)\r - [Playwright Configuration (playwright.config.ts)](#playwright-configuration-playwrightconfigts)\r - [Playwright Locators](#playwright-locators)\r - [Playwright Auto Wait](#playwright-auto-wait)\r - [Custom Fixtures](#custom-fixtures)",
   "main": "index.js",
-  "scripts": {
-    "test": "npx playwright test",
-    "test:headed": "npx playwright test --headed",
-    "test:headed:trace": "npx playwright test --headed --trace on",
-    "test:debug": "npx playwright test --debug",
-    "test:report": "npx playwright show-report",
-    "codegen:url": "npx playwright codegen https://opensource-demo.orangehrmlive.com/web/index.php/auth/login --target=ts --output=e2e/tests/codegen.spec.ts"
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anilsimha13/enterprise-automation-OHRMS.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/anilsimha13/enterprise-automation-OHRMS/issues"
+  },
+  "homepage": "https://github.com/anilsimha13/enterprise-automation-OHRMS#readme",
   "devDependencies": {
     "@faker-js/faker": "^10.6.0",
     "@playwright/test": "^1.62.1",
-    "@types/node": "^26.2.0",
-    "typescript": "^5.9.3"
+    "@types/node": "^26.3.0"
   },
   "dependencies": {
-    "dotenv": "^17.4.2"
+    "typescript": "^5.9.3"
   }
 }

@@ -87,6 +87,8 @@ export default defineConfig({
 <!--
 #### Sequence of Videos to be followed for the complete Automation Framework
 
+### Part -1
+
 - 1. playwright installation and 1st test execution.mp4
 - 2. Playwright test setup.mp4
 - 8. playwright core library vs playwright test runner.mp4
@@ -105,4 +107,9 @@ export default defineConfig({
 - 15. wait for playwright complete E2E setup.mp4
 - 17. API Testing using PlayWright.mp4
 - 18. playwright.config.ts file E2E explanations.mp4
+
+### Part-2
+- 1. Setup new project.mp4
+- 2. exploring test strategy and AUT.mp4
+- 3. Registration and Login API Tests from scratch.mp4
 -->
