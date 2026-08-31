@@ -36,4 +36,8 @@ test("Should able to login user", async ({ request }) => {
     { data: { email: email, password: password } },
   );
   console.log(await res1.json());
+
+  const jsonResponse = await res1.json();
+  const token = jsonResponse.access_token;
+  console.log(token);
 });

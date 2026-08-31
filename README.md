@@ -112,4 +112,5 @@ export default defineConfig({
 - 1. Setup new project.mp4
 - 2. exploring test strategy and AUT.mp4
 - 3. Registration and Login API Tests from scratch.mp4
+- 4. Updating project structure and storing the auth token.mp4
 -->
