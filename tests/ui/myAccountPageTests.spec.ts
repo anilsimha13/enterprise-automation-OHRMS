@@ -8,13 +8,6 @@ test("test", async ({ page }) => {
   const access_token = config["auth-token"];
   console.log(access_token);
   await page.goto("https://practicesoftwaretesting.com/");
-  /*
-  await page.locator('[data-test="nav-sign-in"]').click();
-  await page.locator('[data-test="email"]').fill("Lorenz.Spinka4@hotmail.com");
-  await page.locator('[data-test="password"]').fill("App@2026");
-  await page.locator('[data-test="login-submit"]').click();
-  */
-
   await page.evaluate((token) => {
     window.localStorage.setItem("auth-token", token);
   }, access_token);
