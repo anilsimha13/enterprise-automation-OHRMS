@@ -113,4 +113,5 @@ export default defineConfig({
 - 2. exploring test strategy and AUT.mp4
 - 3. Registration and Login API Tests from scratch.mp4
 - 4. Updating project structure and storing the auth token.mp4
+- 5. Refactoring token code and Injecting auth token for UI Test. Using Playwright codegen.mp4
 -->

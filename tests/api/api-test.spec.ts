@@ -1,5 +1,6 @@
 import { test, request } from "@playwright/test";
 import { faker } from "@faker-js/faker";
+import fs from "fs";
 
 const email: string = faker.internet.email();
 const password: string = "App@2026";
@@ -39,5 +40,10 @@ test("Should able to login user", async ({ request }) => {
 
   const jsonResponse = await res1.json();
   const token = jsonResponse.access_token;
-  console.log(token);
+  const tokenValue = { "auth-token": `${token}` };
+  fs.writeFileSync(
+    "./creds/auth-token.json",
+    JSON.stringify(tokenValue, null, 4),
+  );
+  console.log(tokenValue);
 });
