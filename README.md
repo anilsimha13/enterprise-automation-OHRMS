@@ -115,4 +115,8 @@ export default defineConfig({
 - 4. Updating project structure and storing the auth token.mp4
 - 5. Refactoring token code and Injecting auth token for UI Test. Using Playwright codegen.mp4
 - 6. Understanding the UI Tests to be automated.mp4
+- 7. Creating automation script for scenario 1.mp4
+- 8. Updating assertions and fixing the flaky locators.mp4
+- 9. Fixing expect assertions.mp4
+- 10. Write code for UI Automation Scenario - 2.mp4
 -->

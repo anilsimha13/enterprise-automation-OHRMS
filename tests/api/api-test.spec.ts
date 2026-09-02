@@ -2,10 +2,12 @@ import { test, request } from "@playwright/test";
 import { faker } from "@faker-js/faker";
 import fs from "fs";
 
+//Lafayette.Hodkiewicz52@yahoo.com
+
 const email: string = faker.internet.email();
 const password: string = "App@2026";
 
-test("Should able to register the user", async ({ request }) => {
+test("Should be able to register the user", async ({ request }) => {
   const first_name = faker.person.firstName();
   const last_name = faker.person.lastName();
   const res = await request.post(
