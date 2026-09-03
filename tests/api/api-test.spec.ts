@@ -2,7 +2,7 @@ import { test, request } from "@playwright/test";
 import { faker } from "@faker-js/faker";
 import fs from "fs";
 
-//Lafayette.Hodkiewicz52@yahoo.com
+//Astrid_OKon45@yahoo.com
 
 const email: string = faker.internet.email();
 const password: string = "App@2026";
