@@ -119,4 +119,5 @@ export default defineConfig({
 - 8. Updating assertions and fixing the flaky locators.mp4
 - 9. Fixing expect assertions.mp4
 - 10. Write code for UI Automation Scenario - 2.mp4
+- 11. Creating utility class and refactoring the code to use Builder pattern .mp4
 -->
