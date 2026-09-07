@@ -120,4 +120,9 @@ export default defineConfig({
 - 9. Fixing expect assertions.mp4
 - 10. Write code for UI Automation Scenario - 2.mp4
 - 11. Creating utility class and refactoring the code to use Builder pattern .mp4
+- 12. Updating GET request and creating readable API Test.mov.mp4
+- 13. Creating assertions for Response received and using json schema validations.mp4
+- 14. Json schema validations.mp4
+- 15. Creating Hybrid automation using APIs and UI integration.mp4
+- 16. Setup for POST registration API in request handler.mp4
 -->

@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
-import { RequestHandler } from "../../util/request-handler";
+import { RequestHandler } from "../../utils/request-handler";
+import { validateSchema } from "../../utils/schema-validator";
 
 const baseUrl = "https://api.practicesoftwaretesting.com/";
 
@@ -15,7 +16,9 @@ test("GET Method", async ({ request }) => {
     .getRequest();
   expect(res.ok()).toBeTruthy();
   const jsonRes = await res.json();
-  console.log(jsonRes.data[0]);
-  expect(jsonRes.data[0].id).toEqual("01M1WP2Q459KWPV1N0H93KAKEW");
+  await validateSchema(jsonRes);
+  //console.log(JSON.stringify(jsonRes));
+  //console.log(jsonRes.data[0]);
+  expect(jsonRes.data[0].id).toEqual("01M1YY5XVYYCJ9JH2PDE8HPF54");
   expect(jsonRes.data[0].price).toEqual(48.41);
 });
