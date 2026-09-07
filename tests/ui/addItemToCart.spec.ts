@@ -1,13 +1,13 @@
 import { test, expect } from "@playwright/test";
 import { faker } from "@faker-js/faker";
 
-//Astrid_OKon45@yahoo.com
+//Calista35@hotmail.com
 
 test("should be able to add item to cart", async ({ page }) => {
   await page.goto("https://practicesoftwaretesting.com/");
   await page.locator('[data-test="nav-sign-in"]').click();
   await page.locator('[data-test="email"]').click();
-  await page.locator('[data-test="email"]').fill("Ophelia.Nitzsche@gmail.com");
+  await page.locator('[data-test="email"]').fill("Calista35@hotmail.com");
   await page.locator('[data-test="password"]').fill("App@2026");
   await page.locator('[data-test="login-submit"]').click();
   await page.waitForTimeout(3_000);

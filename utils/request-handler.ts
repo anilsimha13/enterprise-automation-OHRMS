@@ -37,9 +37,13 @@ export class RequestHandler {
 
   async getRequest() {
     let response: any;
-    await test.step(`GET request to: ${this.apiBaseUrl}`, async () => {
-      response = await this.request.get(this.apiBaseUrl, {
+    const fullUrl = `${this.apiBaseUrl}${this.apiPath}`;
+    await test.step(`GET request to: ${fullUrl}`, async () => {
+      response = await this.request.get(fullUrl, {
         headers: this.apiHeaders,
+        params: this.queryParams as {
+          [key: string]: string | number | boolean;
+        },
       });
     });
     return response;
