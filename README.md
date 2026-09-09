@@ -125,4 +125,5 @@ export default defineConfig({
 - 14. Json schema validations.mp4
 - 15. Creating Hybrid automation using APIs and UI integration.mp4
 - 16. Setup for POST registration API in request handler.mp4
+- 17. Use data generator with POST request.mp4
 -->
