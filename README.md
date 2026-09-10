@@ -126,4 +126,6 @@ export default defineConfig({
 - 15. Creating Hybrid automation using APIs and UI integration.mp4
 - 16. Setup for POST registration API in request handler.mp4
 - 17. Use data generator with POST request.mp4
+- 18. Generating data and persisting Registration and Login API Requests.mp4
+- 19. Creating locators for the UI Test.mp4
 -->
