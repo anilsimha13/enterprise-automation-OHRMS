@@ -23,3 +23,13 @@ export function generateUserLoginPayload() {
   userLoginBody.password = password;
   return userLoginBody;
 }
+
+export function generateAddToCartPayload(productId?: string, quantity?: number) {
+  const addToCartPayload = JSON.parse(
+    fs.readFileSync("./request-objects/POST-addToCart.json", "utf-8"),
+  );
+  const addToCartBody = structuredClone(addToCartPayload);
+  if (productId !== undefined) addToCartBody.product_id = productId;
+  if (quantity !== undefined) addToCartBody.quantity = quantity;
+  return addToCartBody;
+}

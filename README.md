@@ -128,4 +128,7 @@ export default defineConfig({
 - 17. Use data generator with POST request.mp4
 - 18. Generating data and persisting Registration and Login API Requests.mp4
 - 19. Creating locators for the UI Test.mp4
+- 20. Injecting state using local and session storages and auth token.mp4
+- 21. Understanding application flow with creating Cart ID and Product ID generation.mp4
+- 22. Integrating APIs for state injection and wrap of the hybrid test scenario.mp4
 -->
