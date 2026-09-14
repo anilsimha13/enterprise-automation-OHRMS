@@ -31,7 +31,6 @@ test("should be able to add item to cart", async ({ page }) => {
   const itemNameInCart = await page
     .locator('//span[@data-test="product-title"]')
     .textContent();
-  console.log(itemNameInCart);
   expect(itemNameInCart).toContain("Claw Hammer with Shock Reduction Grip");
   await page.locator('//button[@data-test="proceed-1"]').click();
   expect(
@@ -51,14 +50,13 @@ test("should be able to add item to cart", async ({ page }) => {
   await page.close();
 });
 
-test.skip("Should be able to complete the Payment for the items added in cart", async ({
+test("Should be able to complete the Payment for the items added in cart", async ({
   page,
 }) => {
   await page.locator('//a[@data-test="nav-cart"]').click();
   const itemNameInCart = await page
     .locator('//span[@data-test="product-title"]')
     .textContent();
-  console.log(itemNameInCart);
   expect(itemNameInCart).toContain("Claw Hammer with Shock Reduction Grip");
   await page.locator('//button[@data-test="proceed-1"]').click();
   expect(

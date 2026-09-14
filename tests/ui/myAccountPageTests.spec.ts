@@ -6,7 +6,6 @@ test("test", async ({ page }) => {
     fs.readFileSync("./creds/auth-token.json", "utf-8"),
   );
   const access_token = config["auth-token"];
-  console.log(access_token);
   await page.goto("https://practicesoftwaretesting.com/");
   await page.evaluate((token) => {
     window.localStorage.setItem("auth-token", token);

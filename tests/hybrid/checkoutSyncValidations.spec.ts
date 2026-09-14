@@ -47,7 +47,6 @@ test("Should validate the Cart-sync", async ({ request, page }) => {
     .postRequest();
 
   const cartIdJsonResponse = await cartIdResponse.json();
-  console.log("Cart response:", cartIdJsonResponse);
 
   // Fetch a real product to get a valid product_id
   const productsResponse = await req
@@ -61,12 +60,9 @@ test("Should validate the Cart-sync", async ({ request, page }) => {
       p.is_rental === false &&
       p.is_location_offer === false,
   );
-  console.log("Product:", JSON.stringify(validProduct));
   const productId = validProduct.id;
 
   const cartPath = `/carts/${cartIdJsonResponse.id}`;
-  console.log("Add to cart URL path:", cartPath);
-  console.log("Add to cart body:", JSON.stringify(generateAddToCartPayload(productId)));
 
   // Add product to cart
   const addToCartResponse = await req
@@ -77,9 +73,7 @@ test("Should validate the Cart-sync", async ({ request, page }) => {
     })
     .body(generateAddToCartPayload(productId))
     .postRequest();
-  console.log("Add to cart status:", addToCartResponse.status());
   const addToCartJsonResponse = await addToCartResponse.json();
-  console.log("Add to cart response:", addToCartJsonResponse);
 
   await page.goto("https://practicesoftwaretesting.com/checkout");
 

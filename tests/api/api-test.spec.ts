@@ -2,8 +2,6 @@ import { test, request } from "@playwright/test";
 import { faker } from "@faker-js/faker";
 import fs from "fs";
 
-//Astrid_OKon45@yahoo.com
-
 const email: string = faker.internet.email();
 const password: string = "App@2026";
 
@@ -30,7 +28,6 @@ test("Should be able to register the user", async ({ request }) => {
       },
     },
   );
-  console.log(await res.json());
 });
 
 test("Should able to login user", async ({ request }) => {
@@ -38,8 +35,6 @@ test("Should able to login user", async ({ request }) => {
     "https://api.practicesoftwaretesting.com/users/login",
     { data: { email: email, password: password } },
   );
-  console.log(await res1.json());
-
   const jsonResponse = await res1.json();
   const token = jsonResponse.access_token;
   const tokenValue = { "auth-token": `${token}` };
@@ -47,5 +42,4 @@ test("Should able to login user", async ({ request }) => {
     "./creds/auth-token.json",
     JSON.stringify(tokenValue, null, 4),
   );
-  console.log(tokenValue);
 });
