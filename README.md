@@ -8,6 +8,7 @@
 - [Playwright Locators](#playwright-locators)
 - [Playwright Auto Wait](#playwright-auto-wait)
 - [Custom Fixtures](#custom-fixtures)
+- [AI Agents & MCP](#ai-agents--mcp)
 
 ### Playwright(Core Library) vs Playwright Test Runner
 
@@ -84,6 +85,18 @@ export default defineConfig({
 - Custom fixtures can be defined in a separate file and imported into your test files. They can be used to provide additional context or data to your tests, making them more modular and reusable.
 - Custom fixtures can also be used to create reusable test utilities, such as login functions or data generators, that can be shared across multiple test files.
 
+### AI Agents & MCP
+
+- MCP setup in VS code for Playwright automation framework.
+- Navigate to Extension and search for '@mcp' and look for 'Playwright MCP' extension and install it.
+- GHCP(GitHub Copilot) setup in VS code for Playwright automation framework.
+  - Login into GitHub account and install the GitHub Copilot extension in VS code.
+  - After installation, you will see a pop-up to enable GitHub Copilot. Click on 'Enable' to activate it.
+- GHCP Chat Modes
+  - Ask Mode: In this mode, you can ask questions or request code snippets from GitHub Copilot. It will provide suggestions based on your input.
+  - Agent Mode: In this mode, GitHub Copilot will act as an AI agent that can assist you in writing code, generating tests, and providing recommendations based on your project context.
+  - Plan Mode: In this mode, GitHub Copilot will help you plan your test automation strategy by providing insights, best practices, and suggestions for structuring your tests and framework.
+
 <!--
 #### Sequence of Videos to be followed for the complete Automation Framework
 
@@ -109,6 +122,7 @@ export default defineConfig({
 - 18. playwright.config.ts file E2E explanations.mp4
 
 ### Part-2
+
 - 1. Setup new project.mp4
 - 2. exploring test strategy and AUT.mp4
 - 3. Registration and Login API Tests from scratch.mp4
@@ -131,4 +145,11 @@ export default defineConfig({
 - 20. Injecting state using local and session storages and auth token.mp4
 - 21. Understanding application flow with creating Cart ID and Product ID generation.mp4
 - 22. Integrating APIs for state injection and wrap of the hybrid test scenario.mp4
+
+### Part-3
+
+- 1. Setup MCP in VSCode and Claude desktop.mp4
+- 2. Overview for Github Copilot Setup.mp4
+- 3. Github copilot - Ask mode explanation and usage.mp4
+
 -->
